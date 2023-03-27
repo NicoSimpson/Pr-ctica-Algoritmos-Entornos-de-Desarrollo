@@ -6,7 +6,7 @@ public class algoritmos {
 	public static long fibonacci(int n) {
 		long fibo1=1;
 		long fibo2=1;
-		for (int i=2;i<=n;i++) {
+		for (int i=2;i<n;i++) {
 			fibo2 = fibo1 + fibo2;
             fibo1 = fibo2 - fibo1;
 		}
