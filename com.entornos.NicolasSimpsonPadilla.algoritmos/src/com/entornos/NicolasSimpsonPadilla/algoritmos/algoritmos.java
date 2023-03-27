@@ -18,7 +18,16 @@ public class algoritmos {
 		for (int i = 1; i <= n; i++) {
             factorial = factorial * i;
         }
-		return n;
+		return factorial;
 	}
 	
+	public static boolean primo (int n) {
+		int cont = 0;
+		boolean primo = false;
+		for (int i = 1; i <= n; i++) {
+			if (n%i==0) cont++;
+		}
+		if (cont == 0) primo = true;
+		return primo;
+	}
 }
