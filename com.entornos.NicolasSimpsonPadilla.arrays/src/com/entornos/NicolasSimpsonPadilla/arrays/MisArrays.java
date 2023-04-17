@@ -61,4 +61,20 @@ public abstract class MisArrays {
 		}
 		return maximo;
 	}
+	
+	/*calcular el valor minimo
+	 * @param minimo - recoge el numero mas bajo del array
+	 * @return - devolvemos el valor minimo
+	 */
+	
+	public static int minimo (int[] array) {
+		int minimo=999999999;
+		
+		for (int i=0; i < array.length; i++) {
+			if (array[i]<=minimo) {
+				minimo=array[i];
+			}
+		}
+		return minimo;
+	}
 }

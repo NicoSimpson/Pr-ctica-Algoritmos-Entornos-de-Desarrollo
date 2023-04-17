@@ -52,5 +52,19 @@ class testMisArrayas {
 		assertEquals(resultadoEsperado2, resultado2);
 		assertEquals(resultadoEsperado3, resultado3);
 	}
+	
+	@Test
+	void testMinimo() {
+		double resultado1 = MisArrays.minimo(array1);
+		double resultadoEsperado1 = 1;
+		double resultado2 = MisArrays.minimo(array2);
+		double resultadoEsperado2 = 1;
+		double resultado3 = MisArrays.minimo(array3);
+		double resultadoEsperado3 = 5;
+		
+		assertEquals(resultadoEsperado1, resultado1);
+		assertEquals(resultadoEsperado2, resultado2);
+		assertEquals(resultadoEsperado3, resultado3);
+	}
 
 }
