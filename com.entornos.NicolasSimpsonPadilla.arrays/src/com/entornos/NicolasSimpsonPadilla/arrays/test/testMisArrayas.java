@@ -38,5 +38,19 @@ class testMisArrayas {
 		assertEquals(resultadoEsperado2, resultado2);
 		assertEquals(resultadoEsperado3, resultado3);
 	}
+	
+	@Test
+	void testMaximo() {
+		double resultado1 = MisArrays.maximo(array1);
+		double resultadoEsperado1 = 1;
+		double resultado2 = MisArrays.maximo(array2);
+		double resultadoEsperado2 = 4;
+		double resultado3 = MisArrays.maximo(array3);
+		double resultadoEsperado3 = 5;
+		
+		assertEquals(resultadoEsperado1, resultado1);
+		assertEquals(resultadoEsperado2, resultado2);
+		assertEquals(resultadoEsperado3, resultado3);
+	}
 
 }

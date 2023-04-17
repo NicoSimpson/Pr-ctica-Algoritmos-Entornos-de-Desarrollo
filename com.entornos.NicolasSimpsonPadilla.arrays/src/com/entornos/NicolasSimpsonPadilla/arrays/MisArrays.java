@@ -31,7 +31,7 @@ public abstract class MisArrays {
 	/*calcular la mediana
 	 * @param mediana - es el numero que estara en la mitad del array
 	 * @param mitad - es el numero que estara en la mitad del array
-	 * @return - devolvemos la media
+	 * @return - devolvemos la mediana
 	 */
 	
 	public static double mediana (int[] array) {
@@ -46,4 +46,19 @@ public abstract class MisArrays {
 		return mediana;
 	}
 
+	/*calcular el valor maximo
+	 * @param maximo - recoge el numero mas alto del array
+	 * @return - devolvemos el valor maximo
+	 */
+	
+	public static int maximo (int[] array) {
+		int maximo=0;
+		
+		for (int i=0; i < array.length; i++) {
+			if (array[i]>maximo) {
+				maximo=array[i];
+			}
+		}
+		return maximo;
+	}
 }
